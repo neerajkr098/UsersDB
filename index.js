@@ -14,8 +14,32 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   database: "user",
-  password: "Neeraj@2005pp",
+  password: "Neeraj@2005ee",
 });
+
+// GENERATE & INSERT 100 FAKE USERS USING FAKER
+// const getRandomUser = () => {
+//   return [
+//     faker.string.uuid(),
+//     faker.internet.username(),
+//     faker.internet.email(),
+//     faker.internet.password(),
+//   ];
+// };
+
+// let fakeUsers = [];
+// for (let i = 0; i < 100; i++) {
+//   fakeUsers.push(getRandomUser());
+// }
+
+// let seedQuery = "INSERT INTO users (id, username, email, password) VALUES ?";
+// connection.query(seedQuery, [fakeUsers], (err, result) => {
+//   if (err) {
+//     console.error("Error inserting fake users:", err);
+//   } else {
+//     console.log(`Successfully inserted ${result.affectedRows} fake users into 'users' table!`);
+//   }
+// });
 
 // HOME ROUTE
 app.get("/", (req, res) => {
