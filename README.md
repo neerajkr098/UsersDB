@@ -1,5 +1,7 @@
 # UserDB
 
+## LinkedIn Post - https://www.linkedin.com/feed/update/urn:li:ugcPost:7514940098787028992/
+
 A small user-management web application built with Node.js, Express, EJS, and MySQL. It provides a browser-based interface for creating, viewing, updating, and deleting user records.
 
 ## Features
